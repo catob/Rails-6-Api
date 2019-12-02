@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe TimesController, type: :controller do
+RSpec.describe Api::TimesController, type: :controller do
   describe 'get index' do
     before do
       get :index, format: :json

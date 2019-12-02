@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :times, only: [:index], format: 'json'
+  namespace :api do
+    resources :times, only: [:index], format: 'json'
+  end
 end
